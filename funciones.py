@@ -89,3 +89,16 @@ a,b=5,10
 print('suma dentro de la funcion: ', suma(a,b))
 print('a:',a, 'b: ',b)
 
+# PASOS DE ARGUMENTOS A FUNCIONES
+'''
+- Por POSICIÓN (por defecto): en el mismo orden en el que está definida la función
+- Por KEYWORDS (palabras clave): se pasan indicando el nombre del argumento y su valor, con el orden que queramos
+'''
+
+'POR POSICIÓN'
+def f(a,b,c):
+    print(a,b,c)
+
+print('POR POSICION',f(1,2,3))
+print('POR KEYWORDS',f(c=12, a=10, b=100))
+
