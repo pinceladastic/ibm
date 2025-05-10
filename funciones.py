@@ -32,7 +32,7 @@ funcion1('Python')
 def factorial(x):
     
     if x>1:
-        a=x*factorial(x-1)
+        a=x*factorial(x-1) #la recursividad se cumple cuando x>1
         return a
     else: 
         return 1
@@ -41,11 +41,11 @@ def factorial(x):
 print('Factorial de 5 =',factorial(5))
 
 #DEVOLVER MÚLTIPLES VALORES SIMULTÁNEAMENTE
-def maxmin(lista):
+def devolver_valores_multiples(lista):
     return max(lista),min(lista) #devuelve una tupla de 2 elementos
 
 l = [1,3,5,6,0]
-maximo, minimo = maxmin(l) #desempaqueta la tupla en 2 variables
+maximo, minimo = devolver_valores_multiples(l) #desempaqueta la tupla en 2 variables
 
 print(minimo,maximo, sep=' ')
 
@@ -76,4 +76,29 @@ def funcion():
 
 funcion()
 print('Valor fuera: ',a) #ámbito global (al módulo)
+
+#ARGUMENTOS DE LAS FUNCIONES: se pasan por referencia
+# --- 
+def suma(a,b):
+    a=3
+    b=4
+    print(a+b)
+    return a+b
+
+a,b=5,10
+print('suma dentro de la funcion: ', suma(a,b))
+print('a:',a, 'b: ',b)
+
+# PASOS DE ARGUMENTOS A FUNCIONES
+'''
+- Por POSICIÓN (por defecto): en el mismo orden en el que está definida la función
+- Por KEYWORDS (palabras clave): se pasan indicando el nombre del argumento y su valor, con el orden que queramos
+'''
+
+'POR POSICIÓN'
+def f(a,b,c):
+    print(a,b,c)
+
+print('POR POSICION',f(1,2,3))
+print('POR KEYWORDS',f(c=12, a=10, b=100))
 
