@@ -21,6 +21,11 @@ print(nuevaCadena)
 print(cadena)
 nuevaCadena=cadena.replace('Mundo','Amigo', posicion) #usando la posicion
 
+#Concatenación de cadenas
+c1='Hola '
+c2='Mundo'
+print('Concatenación:',c1+c2)
+print('Concatenación:',"".join([c1+c2])) #usando el método join del objeto str
 
 #Multiplicación de cadenas
 cadena='Hola'
@@ -35,3 +40,5 @@ print(limpia)
 cadena='.......Hola...'
 limpia=cadena.split('.')
 print(limpia)
+cadena=3
+print(cadena)

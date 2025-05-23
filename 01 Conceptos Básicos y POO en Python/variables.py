@@ -37,6 +37,7 @@ Var3 = "Hola mundo"
 
 # Declaración de variable numérica entera:
 n_edad = 47
+print(n_edad)
 
 # Declaración de variable numérica de coma flotante:
 n_numero = -23.5245
@@ -49,8 +50,10 @@ s_textoLargo = """Esto es un mensaje
 ...con tres saltos
 ...de linea"""
 
-# Sobreescribimos el valor de la variable s_edad y ahora la ponemos como string:
-s_edad = "47"
+#Podemos cambiar el tipo de dato de las variables
+# Sobreescribimos el valor de la variable n_edad y ahora la ponemos como string:
+n_edad = "Cuarenta y Siete"
+print(n_edad)
 
 # Declaración de constante:
 NUMEROPI = 3.14159
