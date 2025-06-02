@@ -113,3 +113,25 @@ pais ='México'
 # lo podemos cambiar en cualquier momento
 
 nombre=1 #ANTES --> nombre="Juan"
+
+#REGLAS DE VARIABLES
+#EJEMPLOS DE BUENAS PRÁCTICAS
+'- Nombres descriptivos' 
+Nombre_completo = 'Juan Pérez'
+nombre_completo = 'Juan Pérez' # Son 2 variables completamente distintas pq hay diferencia entre May/MIN
+edad_usuario=30
+correo_electronico = 'juan@gmail.com'
+saldo_cuenta = 1000.50 #Dato de tipo float
+
+'Evitar nombres cortos o de una sola letra'
+c=5 #no se entiende a qué hace referencia ese nombre de variable
+contador = 5
+
+'Evitar palabras reservadas'
+print('Nombre Completo: ', Nombre_completo)
+print('nombre Completo: ', nombre_completo)
+print('Edad usuario: ', edad_usuario)
+print('correo_electronico: ', correo_electronico)
+print('saldo_cuenta: ', saldo_cuenta)
+print('c: ', c)
+print('contador: ', contador)
