@@ -1,3 +1,7 @@
+# DECLARACIÓN DE UNA CADENA: podemos usar comillas simples o dobles
+nombre='Luis'
+nombre="Luis"
+
 #MANEJO DE CADENAS
 
 #Dividir una cadena con split

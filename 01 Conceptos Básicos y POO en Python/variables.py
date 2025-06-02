@@ -5,6 +5,12 @@
 suma=1+2
 print(suma)
 
+# DEFINICIÓN DE UNA VARIABLE
+nombre='Luis'
+edad=28
+pais='Portugal'
+print('Nombre:', nombre, '\nPaís:',pais, '\nEdad: ',edad)
+
 # Asignar un valor a una variable
 a=1
 print(a)
@@ -93,3 +99,17 @@ print(type(n_numero))
 print(type(s_nombre))
 print(type(NUMEROPI))
 print(type(is_verdadero))
+
+########################################### UDEMY
+
+'VARIABLES'
+X=5
+nombre="Juan"
+lista =['1','2','3','4','5'] #lista en la que asignamos múltiples valores
+pais ='México'
+
+
+# En python, el tipado de datos es DINÁMICO: el tipo de dato y el valor de la variable
+# lo podemos cambiar en cualquier momento
+
+nombre=1 #ANTES --> nombre="Juan"
